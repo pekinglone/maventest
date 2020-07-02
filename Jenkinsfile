@@ -4,6 +4,9 @@ pipeline {
         maven "Maven3.6.0"
         jdk "jdk1.8.0_202"
     }
+    pre{
+        cleanWs()
+    }
     stages {
         stage('Build') {
             steps {
