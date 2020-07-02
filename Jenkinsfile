@@ -11,7 +11,7 @@ pipeline {
                 sh 'which java &&which mvn'
                 sh 'java -version'
                 sh 'mvn -version'
-                //sh 'rm -rf ./* &&  rm -rf ../../.m2/*'
+                sh 'rm -rf ../../.m2/*'
                 // Get some code from a GitHub repository
                 //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                 
